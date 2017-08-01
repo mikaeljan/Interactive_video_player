@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Video Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--<link src="">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.3/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <video muted class="video mejs__player">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogg" type="video/ogg">
+        </video>
+    </div>
+    <div class="wrapper">
+        <p>Now that we've looked at the architecture of the internet, let's see how you might</p>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

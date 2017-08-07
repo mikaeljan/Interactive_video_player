@@ -403,7 +403,7 @@ template {
   display: none; }
 
 .text-current {
-  background-color: yellow;
+  color: orange;
   padding: 0.5em; }
 
 * {
@@ -417,6 +417,9 @@ p {
 p span {
   padding-top: 0.5em;
   padding-bottom: 0.5em; }
+
+.mejs__controls:not([style*="display: none"]) {
+  background: linear-gradient(transparent, teal); }
 
 .wrapper {
   margin: 0 auto; }

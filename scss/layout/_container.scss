@@ -3,7 +3,7 @@
 // ======================================
 .wrapper {
   margin:0 auto;
-  @include mq("mobile"){
+  @include mq("desktop"){
     padding: 3% 8%;
     //border: solid 1em #fff;
   }
@@ -16,7 +16,7 @@
 }
 .text-content {
     padding: 5% 10%;
-  @include mq("mobile"){
+  @include mq("desktop"){
     padding: 0;
   }
     //border: solid 1em #fff;

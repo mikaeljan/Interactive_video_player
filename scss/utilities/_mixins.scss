@@ -5,12 +5,7 @@
 // Media queries
 @mixin mq($break) {
   @if $break == "mobile" {
-    @media (min-width: $brkpoint-md) {
-      @content;
-    }
-  }
-  @else if $break == "desktop" {
-    @media (min-width: $brkpoint-md+1) {
+    @media (min-width: $brkpoint-sm) {
       @content;
     }
   }

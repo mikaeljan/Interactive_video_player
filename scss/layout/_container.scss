@@ -3,13 +3,22 @@
 // ======================================
 .wrapper {
   margin:0 auto;
-  padding: 2% 4%;
-  //border: solid 1em #fff;
+  @include mq("mobile"){
+    padding: 3% 8%;
+    //border: solid 1em #fff;
+  }
 }
 
 .content-video {
-  width:95%;
+  //width:100%;
   max-width: 680px;
   margin: 0 auto;
 }
+.text-content {
+    padding: 5% 10%;
+  @include mq("mobile"){
+    padding: 0;
+  }
+    //border: solid 1em #fff;
+  }
 

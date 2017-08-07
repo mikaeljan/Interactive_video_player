@@ -6,13 +6,16 @@ $( document ).ready(function() {
         startLanguage: 'en'
     });
 
-    $spans.removeClass('text-current')
+    $spans.removeClass('text-current');
     vid.ontimeupdate =()=>{
-        let currentVidTime = vid.currentTime;
+        let currentVidTime = (vid.currentTime);
         // console.log(vid.currentTime);
         for (let i = 0; i < $spans.length; i++){
-            let currentSpanTime = parseFloat($spans[i].getAttribute('data-time'))
+            let currentSpanTime = parseFloat($spans[i].getAttribute('data-time'));
+            //Upravit condition!!
             if (currentSpanTime){
+                // $spans.removeClass('text-current');
+                // $spans[i].addClass('text-current');
                 console.log(currentSpanTime);
                 console.log(currentVidTime);
                 // Kontrolovat ci currentSpanTime je <= ako currentVidTime - ak je tak ostane ak nie tak

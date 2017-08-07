@@ -419,12 +419,19 @@ p span {
   padding-bottom: 0.5em; }
 
 .wrapper {
-  margin: 0 auto;
-  padding: 2% 4%; }
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .wrapper {
+      padding: 3% 8%; } }
 
 .content-video {
-  width: 95%;
   max-width: 680px;
   margin: 0 auto; }
+
+.text-content {
+  padding: 5% 10%; }
+  @media (min-width: 768px) {
+    .text-content {
+      padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,14 +2,14 @@
 //  Containers
 // ======================================
 .wrapper {
-  display: flex;
-  justify-content:center;
   margin:0 auto;
-  padding:20px;
+  padding: 2% 4%;
+  //border: solid 1em #fff;
+}
 
-}
-.mejs__container {
+.content-video {
+  width:95%;
+  max-width: 680px;
   margin: 0 auto;
-  display: block;
-  width:100%;
 }
+

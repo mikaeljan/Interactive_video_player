@@ -402,24 +402,29 @@ template {
 [hidden] {
   display: none; }
 
+.text-current {
+  background-color: yellow;
+  padding: 0.5em; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-video {
-  display: block;
-  width: 100%; }
+p {
+  line-height: 1.5em; }
+
+p span {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
 
 .wrapper {
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
-  padding: 20px; }
+  padding: 2% 4%; }
 
-.mejs__container {
-  margin: 0 auto;
-  display: block;
-  width: 100%; }
+.content-video {
+  width: 95%;
+  max-width: 680px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

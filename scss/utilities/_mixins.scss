@@ -1,0 +1,20 @@
+// ======================================
+//  Utilities
+// ======================================
+
+// Media queries
+@mixin mq($break) {
+  @if $break == "mobile" {
+    @media (min-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "desktop" {
+    @media (min-width: $brkpoint-md+1) {
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`. "
+  }
+}

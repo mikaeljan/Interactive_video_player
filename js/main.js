@@ -1,26 +1,28 @@
 $( document ).ready(function() {
     const vid = document.querySelector(".video");
-    const $spans = $('span[data-time]');
-
+    const textContent = document.getElementsByClassName("text-content")[0];
+    const spans = textContent.getElementsByTagName("span");
     $("video").mediaelementplayer({
         startLanguage: 'en'
     });
 
-    $spans.removeClass('text-current');
-    vid.ontimeupdate =()=>{
+    vid.ontimeupdate =()=> {
         let currentVidTime = (vid.currentTime);
-        // console.log(vid.currentTime);
-        for (let i = 0; i < $spans.length; i++){
-            let currentSpanTime = parseFloat($spans[i].getAttribute('data-time'));
-            //Upravit condition!!
-            if (currentSpanTime){
-                // $spans.removeClass('text-current');
-                // $spans[i].addClass('text-current');
-                console.log(currentSpanTime);
-                console.log(currentVidTime);
-                // Kontrolovat ci currentSpanTime je <= ako currentVidTime - ak je tak ostane ak nie tak
-                // je vacsi a musi ist na dalsi item - vsetky spany dostanu removeClass a ten konkretny dostane addClass
+        for (let i = 0; i < spans.length; i++) {
+            let spanStartTime = spans[i].getAttribute("data-time-start");
+            let spanEndTime = spans[i].getAttribute("data-time-end");
+            if (currentVidTime >= spanStartTime && currentVidTime <= spanEndTime) {
+                spans[i].className = "text-current";
+            } else {
+                spans[i].className = "";
             }
         }
+
+        // Clicking the text content will change the current progress of the video
+        textContent.addEventListener("click", (e) => {
+            if (e.target.tagName === "SPAN") {
+                vid.currentTime = e.target.getAttribute("data-time-start");
+            }
+        });
     }
 });

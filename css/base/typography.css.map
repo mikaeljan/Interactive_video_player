@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,aAAc;EACZ,KAAK,EAAE,MAAM;EACb,OAAO,EAAC,KAAK",
+"mappings": "AAAA,aAAc;EACZ,KAAK,EAAE,MAAM",
 "sources": ["../../scss/base/typography.scss"],
 "names": [],
 "file": "typography.css"

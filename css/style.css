@@ -403,8 +403,7 @@ template {
   display: none; }
 
 .text-current {
-  color: orange;
-  padding: 0.5em; }
+  color: orange; }
 
 * {
   -webkit-box-sizing: border-box;

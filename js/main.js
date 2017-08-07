@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $("video").mediaelementplayer({
         startLanguage: 'en'
     });
-
+    // Event which fires everytime the video updates itself
     vid.ontimeupdate =()=> {
         let currentVidTime = (vid.currentTime);
         for (let i = 0; i < spans.length; i++) {

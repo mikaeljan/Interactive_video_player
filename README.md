@@ -1,6 +1,5 @@
 # Interactive video project
 Interactive video project features clickable text below the video, which follows the video progress and changes styling.<br>
-Pictures fade in and fade out according to user's input.
 ## To do
 1. Setup a live demo:
 2. add variables to sass files
